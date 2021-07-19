@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+	<title>TSFB </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   	<link rel="stylesheet" href="Styles.css">
+   </head>
+   <body>
+	<div class="main" style="overflow: scroll;">
+	   <nav>
+	   		<div class="logo" style="margin-bottom: 17px;">
+	   			<h1><a href="http://localhost/SampleDB/Banking.html">TSFB</h1>
+	   		</div>
+	   		<div class="nav-links" style="font-size: 18px">
+	   			<ul>
+	   				<li><a href="http://localhost/SampleDB/Banking.html"></a>Home</li>
+	   				<li><a href="http://localhost/SampleDB/customer.php">Customers</a></li>
+	   				<li><a href="http://localhost/SampleDB/transactionhistory.php">Transaction History</a></li>
+	   				<li><a href="#">About Us</a></li>
+	   			</ul>
+	   		</div>
+	   </nav>
+
+	   <div class="information">
+	   		<div class="overlay" style="width: 0;
+										height: 45;
+										border-top: 420px solid #fff;
+										border-right:400px solid transparent;
+										border-bottom: 500px solid #fff;
+										border-left: 300px solid #fff;"></div>
+	   		<img src="Image/bbh.png" class="mobile">
+	   		<div id="circle">
+	   			<div class="feature one" style="top: 433px;
+												right: 90px;">
+	   				<div>
+	   					<h1 style="font-size: 23px;">Investment Plans</h1>
+	   					<a href="#"><img src="Image/investment_adobespark.png"></a>
+	   				</div>
+	   			</div>
+				<div class="feature two" style="top:208px;
+												left:418px;">
+					<div>
+	   					<h1 style="font-size: 23px;">Loans</h1>
+	   					<a href="#"><img src="Image/loans_adobespark.png"></a>
+	   				</div>
+				</div>
+	   			<div class="feature three" style="bottom: 435px;
+												  left: 150px;">
+					<div>
+	   					<h1 style="font-size: 23px;">Payements</h1>
+	   					<a href="#"><img src="Image/payment_adobespark.png"></a>
+	   				</div>   			
+	   			</div>
+	   			<div class="feature four">
+	   				<div>
+	   					<h1 style="font-size: 23px;
+									bottom:170px;
+									right:371px;">Credit Cards</h1>
+	   					<a href="#"><img src="Image/images_adobespark.png"></a>
+	   				</div>
+	   			</div>
+
+	   		</div>
+	   </div>
+
+	   	<div class="controls">
+	   		<img src="Image/arrow.png" id="upbtn">
+	   		<h3 style="font-size: 22px;">Features</h3>
+	   		<img src="Image/arrow.png" id="downbtn">
+	   	</div>
+
+	</div> 
+
+	<script>
+		var circle=document.getElementById("circle");
+		var upbtn=document.getElementById("upbtn");
+		var downbtn=document.getElementById("downbtn");
+		
+		var roataevalue= circle.style.transform;
+		var rotatesum;
+
+		upbtn.onclick=function()
+		{
+			rotatesum=roataevalue+"rotate(-90deg)";
+			circle.style.transform=rotatesum;
+			roataevalue=rotatesum;
+		}
+		downbtn.onclick=function()
+		{
+			rotatesum=roataevalue+"rotate(+90deg)";
+			circle.style.transform=rotatesum;
+			roataevalue=rotatesum;
+		}
+	</script>
+
+	</body>
+</html>
+  
+	
+
+
+
+
